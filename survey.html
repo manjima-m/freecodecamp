@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <h1 id="title">COVID SURVEY FORM</h1>
+    <p id="description">Thank you for participating in this survey</p>
+<form id="survey-form">
+ <fieldset class="personal-details"><div id="form-input">
+    <p id="details"><b>Enter Your Details</b></p>
+        <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required>
+       </label></div>
+       <div id="form-input"><label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required></label></div>
+       <div id="form-input"> <label id="number-label">Age:  <input id="number" type="number" max="60" min="18" placeholder="Enter your age">
+    </label></div>
+  <div id="form-input">
+   <label for="drop"> Gender <select id="dropdown"><option>Male</option>
+    <option>Female</option>
+   </select>
+    </label>
+  </div>
+ </fieldset>
+    <fieldset class="Symptoms">
+    <div id="form-input" >
+    <p class="details"><b>Check-in your Symptoms</b></p>
+    <div class="check">
+    <label id="symptom-checkbox" for="cough" >Cough
+    <input type="checkbox" value="cough" name="symptom-checkbox" >
+    </label>
+    <label id="symptom-checkbox" for="breath">Breathing Difficulties <input type="checkbox" value="breath" name="symptom-checkbox"></label>
+    <label id="symptom-checkbox" for="tiredness">Tiredness<input type="checkbox" value="tiredness" name="symptom-checkbox"></label>
+    <label id="symptom-checkbox" for="allergy">Allergy<input type="checkbox" value="allergy" name="symptom-checkbox"></label>
+</div>
+    </div>
+    
+    <div id="form-input">
+    <label for="others">Other difficulties(if any) : <textarea id="others"></textarea></label></div>
+    </fieldset>
+    <fieldset class="vaccine">
+        <p class="details"><b>Vaccine Details</b></p>
+        <p class="did">Did you take the vaccine</p>
+        <label id="vac" for="yes">Yes<input type="radio" name="vac" value="yes" class="vacclass"></label>
+        <label id="vac" for="no">No<input type="radio" name="vac" value="no" class="vacclass"></label>
+
+        <p>Which vaccine did you take?(if yes)</p>
+        <input type="text" name="specify-vac" placeholder="Enter the vaccine-name">
+    </fieldset>
+    <fieldset class="submit">
+    <input type="submit" name="submit" id="submit">
+</fieldset>
+    </form>
+
+ </body>
+ </html>

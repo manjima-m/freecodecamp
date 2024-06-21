@@ -1,0 +1,103 @@
+:root{
+  --background-color : #2582a6;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+  }
+  
+  body{
+    background-color: #90c8df;
+  }
+  
+  #survey-form{
+  
+    display: grid;
+    justify-content:center;
+ 
+   
+    
+  }
+  .personal-details{
+    height: 300px;
+    width:700px;
+    display: grid;
+   justify-content:space-between;
+   background-color: var(--background-color);
+  
+  }
+
+  .Symptoms{
+    display: grid;
+    height: 300px;
+    justify-content:space-between;
+    background-color: var(--background-color);
+  }
+
+  .check{
+    display: grid;
+    justify-content:space-between;
+    line-height: 45px;
+  }
+  .vaccine{
+    display: grid;
+    height: 300px;
+    justify-content:space-between;
+    background-color: var(--background-color);
+  }
+
+  .check label{
+    margin-left: 20px;
+  }
+  #others{
+    height: 50px;
+    width: 350px;
+    margin-left: 20px;
+  }
+  #others label{
+    margin-left: 20px;
+  
+  }
+
+  p.details{
+    font-size:100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .personal-details input,select{
+    width: 400px;
+    margin-left:100px;
+  }
+
+  .personal-details label{
+    margin-left: 20px;
+  }
+
+  .vaccine label{
+    margin-left: 10px;
+  }
+#number{
+  margin-left: 110px;
+}
+  #description{
+    display: flex;
+    justify-content: center;
+  }
+  input{
+    background-color: #FFF5EE;
+  }
+
+  #submit{
+    background-color: #0c4860;
+    color: white;
+  
+   
+  }
+  .submit{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+  }
+  #submit:hover{
+    background-color: rgb(18, 122, 93); 
+  }
