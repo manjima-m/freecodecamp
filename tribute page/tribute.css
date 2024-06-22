@@ -1,0 +1,64 @@
+img{
+    display: block;
+   
+  }
+
+  figure{
+    background-color: white;
+   width: 100%;
+   height: 100%;
+  }
+  figcaption{
+    position: relative;
+    left: 350px;
+    top: 25px;
+  }
+  
+  #image{
+    max-width:100%;
+    height:auto;
+    position: relative;
+    left: 250px;
+    top: 20px;
+  
+  }
+  #main{
+    display:grid;
+        margin: 40px;
+        justify-content: center;
+        border: 4px solid white;
+  }
+  ul{
+    line-height: 60px;
+  }
+  
+  h1{
+    font-variant:small-caps;
+    text-align: center;
+  }
+  p{
+    margin:50px 0  0 20px;
+    font-weight:bolder;
+    color: rgb(30, 30, 30);
+  }
+  
+  body{
+    background-color: #d8cdcd;
+    color: rgb(0, 0, 0);
+  }
+  #tribute-info{
+    margin-left: 35px;
+    margin-top: 70px;
+  }
+  footer{
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  #tribute-link{
+    text-decoration: none;
+    color: red;
+  }
+  a:hover{
+    
+    background-color:black;
+  }
