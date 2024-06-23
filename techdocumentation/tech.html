@@ -1,0 +1,80 @@
+<html>
+<head>
+  <link rel="stylesheet" href="tech.css">
+  <title>Technical documentation</title>
+  </head>
+  <body>
+<nav id="navbar">
+<header id="main-header">Java Documentation</header>
+<a class="nav-link" href="#Introduction" >Introduction</a>
+<a class="nav-link" href="#Special_Classes">Special Classes</a>
+<a class="nav-link" href="#Variables">Variables</a>
+<a class="nav-link" href="#Execution_System">Execution System</a>
+<a class="nav-link" href="#Data_types">Data Types</a>
+<a class="nav-link" href="#Reference">Reference</a></nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header class="intro"><h1>Introduction</h1></header>
+    <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA),meaning that compiled Java code can run on all platforms that support Java without the need to recompile.Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. Although its syntax is similar to that of C and C++, the Java language has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) that are typically not available in traditional compiled languages.</p>
+
+<p>Java gained popularity shortly after its release, and has been a very popular programming language since then.[18] Java was the third most popular programming language in 2022 according to GitHub.[19] Although still widely popular, there has been a gradual decline in use of Java in recent years with other languages using JVM gaining popularity.[20]</p>
+<p>There were five primary goals in the creation of the Java language</p>
+<ul><li>It must be simple, object-oriented, and familiar.</li>
+<li>It must be robust and secure.</li>
+<li>It must be architecture-neutral and portable.</li>
+<li>It must execute with high performance.</li>
+<li>It must be interpreted, threaded, and dynamic.</li></ul></section>
+
+<section class="main-section" id="Special_Classes"> <header class="special"><h1>Special Classes</h1></header>
+
+
+<ul><li><h4>Servlet</h4><p>Java Servlet technology provides Web developers with a simple, consistent mechanism for extending the functionality of a Web server and for accessing existing business systems. Servlets are server-side Java EE components that generate responses to requests from clients. Most of the time, this means generating HTML pages in response to HTTP requests, although there are a number of other standard servlet classes available, for example for WebSocket communication.</p></li>
+<p><li><h4>JavaServer Pages</h4>JavaServer Pages (JSP) are server-side Java EE components that generate responses, typically HTML pages, to HTTP requests from clients. JSPs embed Java code in an HTML page by using the special delimiters % and %. A JSP is compiled to a Java servlet, a Java application in its own right, the first time it is accessed. After that, the generated servlet creates the response.</p></li>
+<p><li><h4>Swing application</h4> Swing is a graphical user interface library for the Java SE platform. It is possible to specify a different look and feel through the pluggable look and feel system of Swing. Clones of Windows, GTK+, and Motif are supplied by Sun. Apple also provides an Aqua look and feel for macOS. Where prior implementations of these looks and feels may have been considered lacking, Swing in Java SE 6 addresses this problem by using more native GUI widget drawing routines of the underlying platforms.</p></li>
+<p><li><h4>JavaFX application</h4> s a software platform for creating and delivering desktop applications, as well as rich web applications that can run across a wide variety of devices. JavaFX is intended to replace Swing as the standard GUI library for Java SE, but since JDK 11 JavaFX has not been in the core JDK and instead in a separate module. JavaFX has support for desktop computers and web browsers on Microsoft Windows, Linux, and macOS. JavaFX does not have support for native OS look and feels.</p></li>
+  </section>
+ 
+  <section class="main-section" id="Variables"> <header class="variables"><h1>Variables</h1></header>
+  <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+
+<p>A Java identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+<h4>Declaring Variables</h4>
+<p>You can declare and assign variables in Java like</p>
+<p>For example,</p>
+<p><code>String name="Amul"</code></p>
+<p><code>int x = 42.</code></p>
+<p><code>char letter='@'</code></p>
+<p><code>boolean IsAdult=true</code></p>
+<p><code>byte age=30</code></p>
+</section>
+  <section class="main-section" id="Execution_System"> <header class="execution"><h1>Execution System</h1></header>
+   <h4> Java JVM and bytecode</h4>
+    <p>One design goal of Java is portability, which means that programs written for the Java platform must run similarly on any combination of hardware and operating system with adequate run time support. This is achieved by compiling the Java language code to an intermediate representation called Java bytecode, instead of directly to architecture-specific machine code. Java bytecode instructions are analogous to machine code, but they are intended to be executed by a virtual machine (VM) written specifically for the host hardware. End-users commonly use a Java Runtime Environment (JRE) installed on their device for standalone Java applications or a web browser for Java applets.</p>
+    
+    <p>Standard libraries provide a generic way to access host-specific features such as graphics, threading, and networking.</p>
+    
+   <p> The use of universal bytecode makes porting simple. However, the overhead of interpreting bytecode into machine instructions made interpreted programs almost always run more slowly than native executables. Just-in-time (JIT) compilers that compile byte-codes to machine code during runtime were introduced from an early stage. Java's Hotspot compiler is actually two compilers in one; and with GraalVM (included in e.g. Java 11, but removed as of Java 16) allowing tiered compilation. Java itself is platform-independent and is adapted to the particular platform it is to run on by a Java virtual machine (JVM), which translates the Java bytecode into the platform's machine language.</p>
+
+   <h4>Performance</h4>
+<p>Programs written in Java have a reputation for being slower and requiring more memory than those written in C++.However, Java programs' execution speed improved significantly with the introduction of just-in-time compilation in 1997/1998 for Java 1.1, the addition of language features supporting better code analysis (such as inner classes, the StringBuilder class, optional assertions, etc.), and optimizations in the Java virtual machine, such as HotSpot becoming Sun's default JVM in 2000. With Java 1.5, the performance was improved with the addition of the java.util.concurrent package, including lock-free implementations of the ConcurrentMaps and other multi-core collections, and it was improved further with Java 1.6.</p>
+</section>
+  <section class="main-section" id="Data_types"> <header class="data_types"><h1>Data_Types</h1></header>
+  <p>There are eight primitive datatypes in Java</p>
+  <ul><li>Short - 2bytes memory</li>
+<li>int - 4bytes memory</li>
+<li>long - 8bytes memory</li>
+<li>float - 4bytes memory</li>
+<li>double - 8bytes memory</li>
+<li>char - 2bytes memory</li>
+<li>boolean - 1bytes memory</li>
+<li>byte - 1bytes memory</li></ul>
+</section>
+<section class="main-section" id="Reference"> <header class="reference"><h1>Reference</h1></header>
+    <p>
+        The documentaion in this page is taken from <a id="wiki" href="https://en.wikipedia.org/wiki/Java_%28programming_language%29#">Wikipedia</a>
+    </p>
+    </section>
+
+  </main>
+  </body>
+  </html>

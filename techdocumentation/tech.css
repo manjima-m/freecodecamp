@@ -1,0 +1,52 @@
+a{
+    text-decoration: none;
+  }
+  
+#main-header{
+    
+    font-size: 150%;
+    border-bottom: 2px solid rgb(24, 24, 24);
+   width: 20%;
+
+}
+
+  #navbar a{
+    display: flex;
+    flex-direction: column;
+    height: 8%;
+    
+    
+  }
+
+  a{
+    font-size: larger;
+    margin-top: 30px;
+    color: black;
+    border-bottom: 2px solid rgb(24, 24, 24); ;
+    width : 20%;
+    
+    
+  }
+  #main-doc{
+    position: absolute;
+    margin-left: 300px;
+  top: -20px;
+  border-left: 2px double rgb(24, 24, 24);
+   
+   
+  }
+
+  .main-section{
+    margin: 20px;
+  }
+  #wiki{
+    color: blue;
+    border:transparent;
+  }
+
+  @media (max-width:720px){
+    
+    body{
+        font-size: 180%;
+    }
+    }
